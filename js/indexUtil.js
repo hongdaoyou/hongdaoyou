@@ -3,7 +3,11 @@
 (function ($) {
     /* 添加表格的标题 */
     var titleTableStr = '\
+<<<<<<< HEAD
         <td width="1%" align="center">  </td> \
+=======
+        <td width="1%" align="center"> <input type="checkbox" class="allCheckBox" align="center">&nbsp;</td> \
+>>>>>>> eadfd88f35f091ff7586ce099d66e0e4f1556472
         <td width="3%" align="center">PlateNum</td>   \
         <td width="3%" align="center">RegisterDate</td> \
         <td width="3%" align="center">Contact</td>        \
@@ -43,6 +47,7 @@
             }
         },
         'otherData':{
+<<<<<<< HEAD
             'maxLen':3
         }
     };
@@ -58,10 +63,20 @@
     dataTableFill(tableData);
 
 
+=======
+            'maxLen':2
+        }
+    };
+
+    //填充表格
+    dataTableFill(tableData);
+
+>>>>>>> eadfd88f35f091ff7586ce099d66e0e4f1556472
     //函数：取出数据，填充表格
     function dataTableFill(inputData)
     {
         var data = inputData.data;
+<<<<<<< HEAD
         var maxLen = inputData.otherData.maxLen;
         var iSum = Object.getOwnPropertyNames(data).length ;
 
@@ -78,6 +93,10 @@
             return;
         }
         //填充表单的内容
+=======
+        var iSum = inputData.otherData.maxLen;
+
+>>>>>>> eadfd88f35f091ff7586ce099d66e0e4f1556472
         var jStr = '';
         var newRow = ''; //新的一行
         for (var i = 0; i < iSum; ++i) {
@@ -95,6 +114,7 @@
             newRow = "<tr class='table_data' id=" + 'tr' + data[i]['orderId'] +">" + jStr + "</tr>";
             $( '#dataTableId').append(newRow);
         }
+<<<<<<< HEAD
 
         //为全部页绑定监听事件
         pageClickFunAdd();
@@ -254,5 +274,9 @@
     });
 
 
+=======
+    }
+
+>>>>>>> eadfd88f35f091ff7586ce099d66e0e4f1556472
 
 })($);
