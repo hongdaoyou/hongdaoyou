@@ -1,0 +1,170 @@
+
+/* 给页面设置背景颜色 */
+   body {
+    background-color: white;
+    width: 100%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin:0px;
+}
+
+#iconImage *{
+    vertical-align:middle;
+}
+
+#titleHeader {
+    height: 40px;
+    background-color: #5c6bc0;
+}
+
+#header_ul li {
+    display: inline;
+    margin-right : 100px; 
+    font-size: 30px;
+}
+
+#header_ul li a{
+    text-decoration:none;
+    font-size: 16px;
+    color: white;
+}
+
+#right_ul_li li {
+    display: inline;
+    margin-right : 20px; 
+}
+
+#right_ul_li li a{
+    text-decoration:none;
+    font-size: 18px;
+    color: white;
+}
+
+/* 表格的标题样式 */
+.table_header {
+        font-size: 12px;
+        border-top:  #d0d0d0 1px solid;
+        height: 30px;
+        border-bottom:#d0d0d0 1px solid;
+        line-height: 30px;
+        font-weight: bold;
+    }
+
+#pageUl {
+    margin:0;
+    padding:0;
+}
+#pageUl li{
+    width:50px;
+    display: inline; 
+}
+/****************************************************88888/
+
+/* 调试的颜色 */
+.debug_C {
+    background-color: pink;
+}
+
+/* 给div加一个20px的高度 */
+.divBlank_C {
+    height: 20px;
+}
+
+/*  0.5 的透明度 */
+.opacityHalf_C {
+    opacity:0.5;
+}
+
+/* 边框设置 */
+.border_C {
+    border:1px solid red;
+}
+/* 边框的角的形状 */
+.borderRadius_C {
+    border-radius: 20px;
+}
+
+/*  200*200的宽度和高度  */
+.widthHeigh_C {
+    width: 200px;
+    height: 200px;
+}
+
+/* 居中显示box 
+IE 不支持 box-pack 和 box-align 属性。
+*/ 
+.boxCenter_C {
+    /* Firefox */
+    display:-moz-box;
+    -moz-box-pack:center;
+    -moz-box-align:center;
+
+    /* Safari, Chrome, and Opera */
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+
+    /* W3C */
+    display:box;
+    box-pack:center;
+    box-align:center;
+}
+
+/* 设置一个标准的字体 */
+.normalFont_C {
+    font-style:normal;
+    font-weight: normal;
+    font-size:medium;
+    font-family:courier;
+}
+
+/* 列表上没有样式  */
+.listNoType_C {
+    list-style-type: none;
+}
+
+/* 外边框的距离 */
+.margin_C {
+    margin:5px 5px 10px 10px;
+}
+
+/* 设置内边距 */
+.padding_C {
+    padding: 10px 10px 10px 10px;
+}
+
+/* 该元素的下边距，与包含块的下边距的距离  */
+.absBottom_C {
+    position: absolute;
+    bottom: 10px;
+}
+
+/* div 2侧都不能出现浮动元素 */
+.divClear_C {
+    float:left;
+    clear: both;
+}
+
+/* 光标形成手状 */
+.point_C {
+    cursor: pointer;
+}
+
+/* 表格的基本格式  */
+.table_C,  td, th {
+    border:1px solid black;
+    border-collapse:collapse; /*合并边框*/
+}
+
+/*超过 高度 用滚动条 */
+.overFlow_C {
+    overflow: auto;
+}
+
+/* 文本居中 */
+.textAlign_C {
+    text-align: center;
+}
+
