@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>欢迎来到hongdy的博客</title>
+    <title>浏览页面</title>
     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/md5.min.js"></script>
     <script type="text/javascript" src="js/storage.js"></script>
@@ -18,7 +18,7 @@
 
     <script type="text/javascript">
         //检查用户的权限
-        if (! webStorage.checkPrivLogin() ) {
+        if (! webStorage.checkPrivScan() ) {
             alert('You Are Not Authorized');
             window.location = webGlobal.indexPage;
         }
@@ -30,7 +30,7 @@
 <!-- 标题 -->
     <div  id='iconImage'>
         <image src='image/iconTitle.jpg' style='margin-left: 30px; margin-right:  5px; margin-top: 10px; width: 90px; height: 90px; ' > 
-            <span style="font-size: 30px;  ">**Manage BackStage</span>
+            <span style="font-size: 30px;  ">Welcome To Hdy's Blog</span>
         </image>
     </div>
     
@@ -39,11 +39,11 @@
         <div id="titleHeader">
             <div style="margin-left: 10px;">
                 <ul id="header_ul">
-                    <li  ><a href="" id="tab1" >Handle-1</a></li>
-                    <li ><a href=""  id="tab2" >Handle-2</a></li>
-                    <li  ><a href="" id="tab3" >Handle-3</a></li>
-                    <li ><a href=""  id="tab4" >Handle-4</a></li>
-                    <li  ><a href="" id="tab5" >Handle-5</a></li>
+                    <li  ><a href="" id="tab1" >GitHub</a></li>
+                    <li ><a href=""  id="tab2" >Linux</a></li>
+                    <li  ><a href="" id="tab3" >Mysql</a></li>
+                    <li ><a href=""  id="tab4" >运维</a></li>
+                    <li  ><a href="" id="tab5" >前端</a></li>
                 </ul>
     
             </div>

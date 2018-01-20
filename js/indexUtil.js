@@ -253,6 +253,35 @@
         openBigDialog(title, content);*/
     });
 
-
+    //html 显示时钟
+    var tSetTime  = setTimeout(showTimeFun,1000);//开始执行
+    function showTimeFun()
+    {
+       clearTimeout(tSetTime);//清除定时器
+       var dt = new Date();
+       var y = dt.getFullYear();
+       var month = dt.getMonth() + 1;
+       if (month < 10) {
+            month = '0' + month;
+       }
+       var d = dt.getDate();
+       if (d < 10) {
+            d = '0' + d;
+       }
+       var h=dt.getHours();
+       if (h < 10) {
+            h = '0' + h;
+       }
+       var m=dt.getMinutes();
+       if (m < 10) {
+            m = '0' + m;
+       }
+       var s=dt.getSeconds();
+       if (s < 10) {
+            s = '0' + s;
+       }
+       document.getElementById("showTimeId").innerHTML =  "NowTime: "+ y +  "-" + month + "-" +d +  " "  + h+ ":" +m+":"+s;
+       tSetTime = setTimeout(showTimeFun,1000); //设定定时器，循环执行             
+    } 
 
 })($);
